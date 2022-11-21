@@ -1,0 +1,38 @@
+.subcribe {
+    background-color: white;
+}
+
+.subscribe__title {
+    font-size: rem(18);
+    color: #272727;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: rem(30);
+}
+
+.subcribe__number {
+    font-family: 'Futura';
+    font-size: rem(22);
+    font-weight: 300;
+    color: #959595;
+    text-decoration: none;
+    display: block;
+    margin-bottom: rem(110);
+    @include adp("margin-bottom", 110, 50);
+}
+
+.subscribe__label {
+    color: #272727;
+    font-size: rem(18);
+    text-transform: uppercase;
+    margin-bottom: rem(30);
+    display: block;
+}
+
+.subscribe__img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    min-height: rem(200);
+    object-fit: cover;
+}

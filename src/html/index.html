@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('modal/head.html',{
+"title": "Гланая"
+})
+
+<body>
+    <div class="page">
+        @@include('modal/header.html',{})
+        <main class="main">
+            <section class="intro">
+                <div class="intro__block">
+                    <button style="margin-top: 500px;" id="btn">Кнопка</button>
+                    <button style="margin-top: 500px;" id="btn2">Кнопка</button>
+                </div>
+                <div class="intro__block"></div>
+            </section>
+
+            <section class="categories">
+                <div class="categories__grid">
+                    <article class="category">
+                        <img class="category__img" src="@img/categories/for-man.jpg" alt="">
+                        <a class="category__link" href="">
+                            <p class="category__text">Перейти в раздел</p>
+                            <h2 class="title category__title">Для мужчин</h2>
+                        </a>
+                    </article>
+                    <article class="category">
+                        <img class="category__img" src="@img/categories/for-woman.jpg" alt="">
+                        <a class="category__link" href="">
+                            <p class="category__text">Перейти в раздел</p>
+                            <h2 class="title category__title">Для женщин</h2>
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="find grid">
+                <div class="grid__block">
+                    <h2 class="title find__title">Найди бутик около себя</h2>
+                    <label class="find__label" for="find-input">Введите свой адрес и узнайте о самых ближайших бутиках к
+                        вам</label>
+                    <div class="input-block">
+                        <input class="input-block__input" id="find-input" placeholder="Введите адрес" type="text">
+                        <button type="button" class="button input-block__submit">
+                            <span class="button__line"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="grid__block">
+                    <iframe class="map"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2882247.301657334!2d39.1692381!3d45.1325235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1668876198010!5m2!1sru!2sru"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </section>
+
+            <section class="products">
+                <article class="card">
+                    <a href="">
+                        <img class="card__img" src="@img/products/ring-1.png" alt="">
+                        <div class="card__block">
+                            <span class="card__name">КОЛЬЦО jow’s, Cartier</span>
+                            <p class="card__desc">Белое золото, бриллианты</p>
+                            <span class="card__price">674 000 ₽</span>
+                        </div>
+                    </a>
+                </article>
+                <article class="card">
+                    <a href="">
+                        <img class="card__img" src="@img/products/earrings-1.png" alt="">
+                        <div class="card__block">
+                            <span class="card__name">СЕРЬГИ moon, HUBLOT</span>
+                            <p class="card__desc">Желтое золото, сапфир</p>
+                            <span class="card__price">498 000 ₽</span>
+                        </div>
+                    </a>
+                </article>
+                <article class="card card_products">
+                    <a href="">
+                        <img class="card__img" src="@img/products/necklace.jpg" alt="">
+                        <div class="card__block">
+                            <span class="card__name">КОЛЬЕ etoile, HUBLOT</span>
+                            <p class="card__desc">Белое золото, бриллианты</p>
+                            <span class="card__price">539 000 ₽</span>
+                        </div>
+                    </a>
+                </article>
+                <article class="card">
+                    <a href="">
+                        <img class="card__img" src="@img/products/ring-2.png" alt="">
+                        <div class="card__block">
+                            <span class="card__name">КОЛЬЦО croix, Cartier</span>
+                            <p class="card__desc">Желтое, белое, розовое золото</p>
+                            <span class="card__price">432 000 ₽</span>
+                        </div>
+                    </a>
+                </article>
+                <article class="card">
+                    <a href="">
+                        <img class="card__img" src="@img/products/earrings-2.png" alt="">
+                        <div class="card__block">
+                            <span class="card__name">СЕРЬГИ win, BLANCPAIN</span>
+                            <p class="card__desc">Желтое золото, жемчуг</p>
+                            <span class="card__price">398 000 ₽</span>
+                        </div>
+                    </a>
+                </article>
+            </section>
+
+            <section class="our-social">
+                <div class="container">
+                    <h2 class="title our-social__title">Мы в социальных сетях</h2>
+                </div>
+                <div class="slider">
+                    <div class="swiper swiper_margin">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="@img/our-social/img-1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="@img/our-social/img-2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="@img/our-social/img-3.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="@img/our-social/img-4.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="@img/our-social/img-5.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container slider__block">
+                        <div class="slider__social">
+                            <a href="">f</a>
+                            <a href="">inst</a>
+                        </div>
+                        <div class="slider__nav">
+                            <button type="button" class="slider__prev">
+                                <img src="@img/icons/button.svg" alt="">
+                            </button>
+                            <div class="swiper-pagination slider__pagination"></div>
+                            <button type="button" class="slider__next">
+                                <img src="@img/icons/button.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="subcribe grid">
+                <div class="grid__block">
+                    <h2 class="subscribe__title">телефон флагманского магазина</h2>
+                    <a class="subcribe__number" href="tel:+7 800 456 456">+7 800 456 456</a>
+                    <label class="subscribe__label" for="subcribe-input">подпишитесь на новости</label>
+                    <div class="input-block input-block_black">
+                        <input class="input-block__input" id="subcribe-input" placeholder="Введите адрес" type="text">
+                        <button type="button" class="button button_black input-block__submit">
+                            <span class="button__line"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="grid__block">
+                    <img class="subscribe__img" src="@img/subscribe/img.jpg" alt="">
+                </div>
+            </section>
+        </main>
+        @@include('modal/footer.html',{})
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module" src="assets/js/app.js"></script>
+</body>
+
+</html>

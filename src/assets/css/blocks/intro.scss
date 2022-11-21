@@ -1,0 +1,126 @@
+.intro {
+    padding-bottom: rem(20);
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    height: 80vh;
+
+    @media (max-width: em(767)) {
+        grid-template-columns: 1fr rem(60);
+    }
+}
+
+.intro__block {
+    background-color: white;
+
+    &:last-child {
+        background-color: #272727;
+    }
+}
+
+// .intro__content {
+//     padding-top: rem(350);
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     gap: 0 rem(30);
+//     position: relative;
+//     z-index: 1;
+
+//     @media (max-width: em(1200)) {
+//         grid-template-columns: 1fr;
+//     }
+// }
+
+// .content__block {
+//     &:nth-child(2) {
+//         // background-color: #272727;
+//     }
+// }
+
+// .intro__img {
+//     max-width: 100%;
+
+//     @media (max-width: em(1200)) {
+//         display: none;
+//     }
+// }
+
+// .intro__title-block {
+//     text-align: right;
+//     width: auto;
+
+//     @media (max-width: em(1200)) {
+//         text-align: left;
+//     }
+// }
+
+// .intro__title {
+//     font-family: 'Forum';
+//     font-size: rem(64);
+//     font-weight: 400;
+//     margin-bottom: rem(30);
+//     white-space: nowrap;
+//     @include adp("font-size", 64, 32);
+// }
+
+// .intro__link {
+//     font-family: 'Segoe';
+//     font-size: rem(18);
+//     color: #272727;
+//     text-decoration: none;
+//     position: relative;
+//     right: -20%;
+
+//     &::after {
+//         content: "";
+//         display: block;
+//         width: rem(130);
+//         height: rem(1);
+//         background-color: #272727;
+//         position: absolute;
+//         left: 0;
+//         transform: translateX(-120%);
+//         top: 55%;
+//     }
+// }
+
+// .intro__lang {
+//     align-self: end;
+//     justify-self: start;
+//     display: flex;
+//     align-items: center;
+//     gap: rem(10);
+// }
+
+// .intro__lang-ru {}
+
+// .intro__lang-en {}
+
+// .intro__product {
+//     align-self: end;
+//     justify-self: end;
+//     max-width: rem(200);
+//     display: flex;
+//     flex-direction: column;
+//     row-gap: rem(10);
+//     align-items: flex-end;
+
+//     @media (max-width: em(1200)) {
+//         display: none;
+//     }
+// }
+
+// .intro__product-name {
+//     color: white;
+// }
+
+// .intro__product-desc {
+//     font-family: 'Futura';
+//     color: #C2C2C2;
+//     font-weight: 300;
+// }
+
+// .intro__product-price {
+//     color: #EFC58B;
+//     font-family: 'Segoe';
+//     font-size: rem(18);
+// }

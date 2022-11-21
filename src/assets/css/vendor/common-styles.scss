@@ -1,0 +1,161 @@
+.container {
+   max-width: rem($container);
+   margin: 0 auto;
+   width: 100%;
+   padding: 0 rem($padding);
+}
+
+.button {
+   background: none;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 0;
+   cursor: pointer;
+   transition: right, .2s;
+   height: rem(15);
+
+   &__line {
+      display: block;
+      width: 100%;
+      height: rem(2);
+      background-color: white;
+
+      &::before,
+      &::after {
+         content: "";
+         width: rem(10);
+         height: rem(2);
+         background-color: white;
+         position: absolute;
+         right: rem(-0.5);
+      }
+
+      &::before {
+         bottom: rem(2.5);
+         transform: rotate(-45deg);
+      }
+
+      &::after {
+         top: rem(2.5);
+         transform: rotate(45deg);
+      }
+   }
+
+
+   &_black {
+      .button__line {
+         background-color: #272727;
+
+         &::before,
+         &::after {
+            background-color: #272727;
+         }
+      }
+   }
+
+   &:hover {
+      width: rem(50);
+      right: rem(-20);
+   }
+
+   &_slider {
+      width: rem(50);
+   }
+}
+
+.title {
+   font-size: rem(48);
+   color: white;
+   font-family: 'Forum';
+   font-weight: 400;
+   position: relative;
+   @include adp("font-size", 64, 24);
+}
+
+.grid {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+
+   .grid__block {
+      &:first-child {
+         padding: rem(170) rem(150);
+         @include adp("padding-top", 170, 50);
+         @include adp("padding-bottom", 170, 50);
+         @include adp("padding-left", 150, 15);
+         @include adp("padding-right", 150, 15);
+
+         @media (max-width: em(767)) {
+            grid-row: 2 / 3;
+         }
+      }
+   }
+
+   @media (max-width: em(767)) {
+      grid-template-columns: 1fr;
+   }
+}
+
+.input-block {
+   display: flex;
+   align-items: center;
+   position: relative;
+
+   &__input {
+      background: transparent;
+      border: 0;
+      border-bottom: 2px solid #656565;
+      padding: rem(15) 0;
+      width: 100%;
+      color: white;
+      cursor: pointer;
+      transition: border 0.2s;
+
+      &:focus {
+         outline: none;
+         border-bottom: 2px solid white;
+
+         &::placeholder {
+            color: white;
+            transition: color 0.2s;
+         }
+      }
+
+      &::placeholder {
+         font-family: 'Forum';
+         font-weight: 300;
+         font-size: rem(18);
+         color: #656565;
+      }
+   }
+
+   &__submit {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: rem(30);
+      height: rem(15);
+   }
+
+   &_black {
+      .input-block__input {
+         border-bottom: 2px solid #afafaf;
+
+         &::placeholder {
+            color: #afafaf;
+            transition: color 0.2s;
+         }
+
+         &:focus {
+            border-bottom: 2px solid #272727;
+
+            &::placeholder {
+               color: #272727;
+            }
+         }
+      }
+   }
+
+}
